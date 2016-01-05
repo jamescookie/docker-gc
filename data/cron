@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "[$(date)] Docker GC starting." >> /logs/docker-gc.log
+
+/docker-gc >> /logs/docker-gc.log
+
+echo "[$(date)] Docker GC has completed." >> /logs/docker-gc.log
